@@ -21,7 +21,6 @@
     justify-items: center;
     align-items:flex-start;
     height: 100%;
-    padding-top: 10%;
     padding-left: 10%;
 }
 
@@ -68,7 +67,7 @@
     padding-right: 4%;
     padding-top: 4%;
     padding-bottom: 4%;
-
+    height: 100vh;
 }
 
 .contentBoxes > div {
