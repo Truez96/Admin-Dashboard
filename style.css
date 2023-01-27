@@ -1,0 +1,245 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+
+.containerMain{
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    display: grid;
+    height: 100vh;
+}
+
+.sidebar{
+    background-color: rgb(97, 170, 243);
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items:flex-start;
+    height: 100%;
+    padding-top: 10%;
+    padding-left: 10%;
+}
+
+.sidebar > * img {
+    max-height: 30px;
+    min-height: 15px;
+    width: auto;
+    margin-right: 7%;
+}
+
+.header{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: grid;
+    grid-template-rows: 4fr 6fr;
+    background-color:white;
+    box-shadow: 5px 5px 5px rgba(181, 189, 194, 0.612);
+    max-height: 20vh;
+}
+
+.headerTop{
+    display: grid;
+    grid-template-columns: 8fr 1fr 1fr 2fr;
+    max-height: 7vh;
+    margin-top: 1.5%;
+}
+.headerBot{
+    display: grid;
+    grid-template-columns: 2fr 5fr 2fr 2fr 2fr;
+}
+
+.mainContent{
+    display: grid;
+    grid-template-columns: 6fr 2fr;
+    background-color: rgba(213, 221, 227, 0.612);
+}
+
+.contentBoxes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 8fr 8fr 8fr;
+    gap: 25px;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+
+}
+
+.contentBoxes > div {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(181, 189, 194, 0.612);
+    border-left: 8px solid rgb(109, 203, 137);
+    padding: 7%;
+}
+.contentBoxes > div > h5 {
+    font-weight: 650;
+    font-size: 15px;
+}
+
+.contentText{
+    color:rgba(17, 18, 18, 0.612);
+    padding-top: 2%;
+}
+
+.yourProjects{
+    grid-row: 1/2;
+    grid-column-start: 1;
+}
+
+.contentBox1{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.contentBox2{
+    grid-column: 2/3;
+    grid-row: 2/3;
+
+}.contentBox3{
+    grid-column: 1/2;
+    grid-row: 3/4;
+
+}.contentBox4{
+    grid-column: 2/3;
+    grid-row: 3/4;
+
+}.contentBox5{
+    grid-column: 1/2;
+    grid-row: 4/5;
+
+}.contentBox6{
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+.rightSide{
+    display:grid;
+    grid-template-columns: none;
+    grid-template-rows: 1fr 12fr 1fr 12fr;
+    gap:10px;
+    padding-top: 12%;
+    padding-bottom: 12%;
+    padding-left: 12%;
+    padding-right: 12%;
+    width: fit-content;
+}
+
+.sidebarTop h1, .sidebarMid h1, .sidebarBot h1 {
+    font-size: 18px;
+}
+
+.sidebarTop > *, .sidebarMid > *, .sidebarBot > * {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin: 6%;
+    color: white;
+}
+
+.sidebarTop{
+    margin-bottom: 12%;
+}
+.sidebarMid{
+    margin-bottom: 12%;
+}
+.sidebarBot{
+    margin-bottom: 12%;
+}
+
+.announcements, .trending{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 5px 5px 5px rgba(181, 189, 194, 0.612);
+    border-radius: 25px;
+    padding: 8%;
+    justify-content: space-evenly;
+}
+
+.announcement > h5 {
+    font-weight: 600;
+}
+
+.rightSideTextContents{
+    font-size: smaller;
+    color: rgba(17, 18, 18, 0.612);
+}
+
+
+.searchLine > img {
+    height: 3%;
+    display: block;
+}
+
+.bellicon > img {
+    height: 3%;
+    display: block;
+}
+
+.searchLine{
+    grid-column: 1/2;
+    display: flex;
+    margin-left: 5%;
+}
+
+.searchBar{
+    display: inline-block;
+    height: min-content;
+    width: 70%;
+    height: 3.5%;
+    border-radius: 25px;
+    background-color: rgba(213, 221, 227, 0.612);
+    border: 0;
+    margin-left: 2%;
+}
+
+.profilePic > img{
+    height: 7%;
+    display: block;
+    border-radius: 50%;
+}
+
+.fullName{
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.greeting{
+    font-size: 18px;
+}
+
+.profilePicBot > img{
+    height: 30%;
+    border-radius: 50%;
+    margin-left: 40%;
+}
+
+.headerBot > div button{
+    background-color: rgb(97, 170, 243);
+    color: white;
+    border-radius: 20px;
+    width: 70%;
+    height: 16%;
+    margin-top: 20%;
+    border:0;
+}
+
+.yourProjects, .announcementsTitle, .trendingTitle{
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+.trendingImg{
+    height: 5%;
+}
+
+
+
